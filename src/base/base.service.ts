@@ -5,7 +5,7 @@ import { UpdateBaseDto } from './dto/update-base.dto';
 @Injectable()
 export class BaseService {
   create(createBaseDto: CreateBaseDto) {
-    return 'This action adds a new base';
+    return 'This action adds a new base' + JSON.stringify(createBaseDto);
   }
 
   findAll() {
